@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Encryptonet Sockets": {
+      "commandName": "Project",
+      "commandLineArgs": "-d cat.aes"
+    }
+  }
+}
