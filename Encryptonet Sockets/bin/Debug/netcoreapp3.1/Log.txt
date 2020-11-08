@@ -1,0 +1,8 @@
+2020-11-05 9:29:39 PM>>File Does not exist
+2020-11-05 9:29:59 PM>>File Does not exist
+2020-11-05 9:50:48 PM>>System.IO.IOException: The process cannot access the file 'C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\cat.jpg' because it is being used by another process.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode)
+   at Encryptonet_Sockets.Program.Decrypt(Stream stream) in C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\Program.cs:line 205: The process cannot access the file 'C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\cat.jpg' because it is being used by another process.

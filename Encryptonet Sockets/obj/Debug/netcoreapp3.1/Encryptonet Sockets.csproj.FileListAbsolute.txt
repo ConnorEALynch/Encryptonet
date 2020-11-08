@@ -11,3 +11,29 @@ C:\Users\Connor\source\repos\Encryptonet Sockets\Encryptonet Sockets\obj\Debug\n
 C:\Users\Connor\source\repos\Encryptonet Sockets\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.dll
 C:\Users\Connor\source\repos\Encryptonet Sockets\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.pdb
 C:\Users\Connor\source\repos\Encryptonet Sockets\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.genruntimeconfig.cache
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.exe
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.dll.config
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.deps.json
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.runtimeconfig.json
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.runtimeconfig.dev.json
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Encryptonet Sockets.pdb
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.csprojAssemblyReference.cache
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.AssemblyInfoInputs.cache
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.AssemblyInfo.cs
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.pdb
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.genruntimeconfig.cache
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.csproj.CoreCompileInputs.cache
+C:\Users\Connor\source\repos\Encryptonet\Encryptonet Sockets\obj\Debug\netcoreapp3.1\Encryptonet Sockets.csproj.CopyComplete

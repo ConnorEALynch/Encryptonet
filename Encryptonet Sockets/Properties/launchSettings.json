@@ -2,7 +2,7 @@
   "profiles": {
     "Encryptonet Sockets": {
       "commandName": "Project",
-      "commandLineArgs": "-d cat.aes"
+      "commandLineArgs": "-d cat.jpg.aes"
     }
   }
 }

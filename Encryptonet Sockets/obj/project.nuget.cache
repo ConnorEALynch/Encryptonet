@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "NBEqDdvl9Nn+M/PA+djRO+fbnEuJ4xH4Lh4jQIaFC1jdObrcCCLb4aPXX0IaQQyl1E8G+ARas1BPmLeDeTCCJw==",
+  "dgSpecHash": "4H68JJj6woS5MwVHOMTDdlb4+ogGhIbUBdySR4G1uQcbCVP3h1w/N4NK1P7e+q+vqQvkSzBV/z15gCkVnFTqYg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Connor\\source\\repos\\Encryptonet\\Encryptonet Sockets\\Encryptonet Sockets.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Connor\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.7.0\\system.security.cryptography.protecteddata.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.security.permissions\\4.7.0\\system.security.permissions.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
+    "C:\\Users\\Connor\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

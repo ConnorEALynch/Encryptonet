@@ -2,7 +2,8 @@
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
-using System.Collections;
+using System.Collections.Generic;
+using System.Configuration;
 
 namespace Encryptonet_Sockets
 {
@@ -10,8 +11,8 @@ namespace Encryptonet_Sockets
     {
         public enum mode { decrypt, encrypt};
         static mode operation;
-        public static byte[] key = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
-        public static byte[] iv = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
+        public static List<byte> KEY;
+        public static List<byte> IV;
         static string filePath = "";
         static string fileName = "";
         static string fileExtension = "";
@@ -26,7 +27,7 @@ namespace Encryptonet_Sockets
                     switch (operation)
                     {
                         case mode.decrypt:
-                            using (FileStream fsDecrypt = new FileStream("cat.jpg", FileMode.OpenOrCreate))
+                            using (FileStream fsDecrypt = new FileStream(fileName, FileMode.OpenOrCreate))
                             {
                                 using (CryptoStream csDecrypt = Decrypt(fsDecrypt))
                                 {
@@ -83,8 +84,22 @@ namespace Encryptonet_Sockets
                 Logger.LogMessage("check command line arguements, inputs were: ");
             }
         }
+        static List<byte> parseConfigArray(string[] values)
+        {
+            List<byte> result = new List<byte>();
+            foreach (string value in values)
+            {
+                result.Add(Byte.Parse(value));
+            }
+            return result;
+        }
+        
         static bool ParseArgs(string[] args)
         {
+            //read and parse Key and IV from config file
+            IV = parseConfigArray(ConfigurationManager.AppSettings["IVs"].Split(','));
+            KEY = parseConfigArray(ConfigurationManager.AppSettings["Keys"].Split(','));
+           
             bool result = false;
             if (args.Length > 0 && args.Length <= 2)
             {
@@ -109,7 +124,7 @@ namespace Encryptonet_Sockets
                     else
                     {
                         filePath = Path.GetFullPath(arg);
-                        fileName = Path.GetFileName(arg);
+                        fileName = Path.GetFileNameWithoutExtension(arg);
                         fileExtension = Path.GetExtension(arg);
                     }
                 }
@@ -142,23 +157,24 @@ namespace Encryptonet_Sockets
             CryptoStream cStream = null;
             try
             {
-               
+
 
                 //Create a new instance of the default Aes implementation class  
                 // and encrypt the stream.  
 
                 //this needs to abstracted and key/iv need to be changable
-                Aes aes = Aes.Create();
+                using (Aes aes = Aes.Create())
+                {
 
-               
 
-                //Create a CryptoStream, pass it the FileStream, and encrypt
-                //it with the Aes class.  
-                 cStream = new CryptoStream(
-                    stream,
-                    aes.CreateEncryptor(key, iv),
-                    CryptoStreamMode.Write);
 
+                    //Create a CryptoStream, pass it the FileStream, and encrypt
+                    //it with the Aes class.  
+                    cStream = new CryptoStream(
+                       stream,
+                       aes.CreateEncryptor(KEY.ToArray(), IV.ToArray()),
+                       CryptoStreamMode.Write);
+                }
             }
             catch (ArgumentException argExcept)
             {
@@ -180,19 +196,17 @@ namespace Encryptonet_Sockets
 
                 using (Aes aesAlg = Aes.Create())
                 {
-                    aesAlg.Key = key;
-                    aesAlg.IV = iv;
+                    aesAlg.Key = KEY.ToArray();
+                    aesAlg.IV = IV.ToArray();
 
                     // Create a decryptor to perform the stream transform.
                     ICryptoTransform decryptor = aesAlg.CreateDecryptor(aesAlg.Key, aesAlg.IV);
 
-                    // Create the streams used for decryption.
-                    using (FileStream fsDecrypt = new FileStream("cat.jpg", FileMode.OpenOrCreate))
-                    {
+
                         //Create a CryptoStream, pass it the FileStream, and encrypt
                         //it with the Aes class.  
-                        cStream = new CryptoStream(fsDecrypt, decryptor, CryptoStreamMode.Write);
-                    }
+                        cStream = new CryptoStream(stream, decryptor, CryptoStreamMode.Write);
+                    
                 }
             }
             catch (ArgumentException argExcept)
